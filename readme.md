@@ -6,7 +6,7 @@ Terraform provider for Azure [here](https://github.com/hashicorp/terraform-provi
 
 # Prerequisite:
 
-Setup needed tools like Azure CLI, Terraform CLI, etc using the [Admin Docs](./azure-admin.md). Note that everything is containerized using Docker.
+Setup needed tools like Azure CLI, Terraform CLI, etc using the [Admin Docs](./docs/azure-admin.md). Note that everything is containerized using Docker.
 
 # Terraform Azure Kubernetes Provider
 
@@ -74,8 +74,30 @@ mv ./kubectl /usr/local/bin/kubectl
 
 kubectl get svc
 
-
 ```
+
+# Bonus: Infracost
+
+You can use [Infracost](https://github.com/infracost/infracost) for cloud cost estimates and FinOps best practices for Terraform.
+
+Options:
+
+1. Infracost CLI & API Key: can easily view cost estimates on deployment server.
+<br>
+
+![Infracost CLI & API Key](./docs/infracost_cli.png)
+
+<br>
+
+
+2. Integrate Infracost with CI/CD: can easily post cost estimates in pull requests. This provides your team with a safety net as people can discuss costs as part of the workflow.
+<br>
+
+![Integrate Infracost with CI/CD](./docs/infracost_cicd.png)
+
+<br>
+
+
 
 # Clean up
 
