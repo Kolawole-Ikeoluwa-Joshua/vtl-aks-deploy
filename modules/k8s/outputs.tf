@@ -1,0 +1,1 @@
+# --- modules/k8s/outputs.tf ---
